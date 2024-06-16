@@ -1,4 +1,7 @@
 import { Module } from '@nestjs/common';
+import { GenerateVideoModule } from './generate-video/generate-video.module';
 
-@Module({})
+@Module({
+	imports: [GenerateVideoModule],
+})
 export class AppModule {}
